@@ -61,7 +61,7 @@ start = int(input('Сколько вы пробегаете сейчас? '))
 finish = int(input('Сколько вы хотите пробегать в итоге при увеличения расттояния на 10% в день? '))
 day = 1
 
-while start <= finish:
+while start < finish:
     start *= 1.1
     day += 1
 print(f'Вы достигните цели на {day} день')
