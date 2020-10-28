@@ -46,13 +46,17 @@ money_in = float(input('Введите вашу выручку '))
 money_out = float(input('Введите ваши издержки '))
 result = money_in - money_out
 
-print(f'Ваш результат: {result:.2f}')
 if result > 0:
-    rentable = money_in / money_out * 100
+    print(f'Ваша прибыль: {result:.2f}')
+    rentable = result / money_in * 100
     print(f'Рентабельность: {rentable:.2f} %')
     workers = int(input('Сколько у вас работает человек? '))
     result_per_worker = result / workers
     print(f'Прибыль фирмы на сотрудника - {result_per_worker:.2f}')
+elif result < 0:
+    print(f'Ваш убыток: {result:.2f}')
+else:
+    print('Ваша фирма работает в 0')
 '''
 
 # Упражнение №6
