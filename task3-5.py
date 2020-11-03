@@ -10,7 +10,7 @@ def summary():
                 break
             else:
                 try:
-                    in_sum += int(el)
+                    in_sum += float(el)
                 except ValueError:
                     print('Было введено не число!')
         fin_sum += in_sum
